@@ -1,9 +1,14 @@
-public class Main{
+public class Main extends PrintLetters {
+
+    public Main(char a, int nums) {
+        super(a, nums);
+    }
+
     public static void main(String[] args) {
 
         //Task Object Created here
-        Printnum task1 = new Printnum('r',40);
-        Printnum task2 = new Printnum('g',30);
+        Runnable task1 = new PrintLetters('b',40);
+        Runnable task2 = new PrintLetters('g',30);
 
         //Thread that faciliates execution of a task
         Thread thread1 = new Thread(task1);
@@ -14,22 +19,3 @@ public class Main{
     }
 }
 
-//Our Tasks Class Created here
-class Printnum implements Runnable{
-    char letter;
-    int no;
-
-    public Printnum(char a, int nums){
-        letter = a;
-        no = nums;
-    }
-
-    @Override
-    //What the class is to do
-    public void run() {
-        for(int i =0; i< no; i++){
-            System.out.println(letter);
-        }
-
-    }
-}
