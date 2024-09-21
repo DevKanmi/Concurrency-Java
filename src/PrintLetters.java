@@ -1,5 +1,5 @@
 //Our Tasks Class Created here
-public class PrintLetters implements Runnable{
+public class PrintLetters implements Runnable{  //Instead of Implement Runnable, you can extend Thread Class
     char letter;
     int no;
 

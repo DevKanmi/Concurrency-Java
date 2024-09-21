@@ -7,7 +7,7 @@ public class Main extends PrintLetters {
     public static void main(String[] args) {
 
         //Task Object Created here
-        Runnable task1 = new PrintLetters('b',40);
+        Runnable task1 = new PrintLetters('b',50);
         Runnable task2 = new PrintLetters('g',30);
 
         //Thread that faciliates execution of a task
@@ -16,6 +16,16 @@ public class Main extends PrintLetters {
 
         thread1.start();
         thread2.start();
+
+    }
+}
+
+class customs extends Thread{
+    int number;
+    char letter;
+    customs(int a, char b){
+        number = a;
+        letter =b;
     }
 }
 
