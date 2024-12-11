@@ -32,7 +32,7 @@ public class semaphore {
     public  void deposit(int Amount){
         try{
             semaphore1.acquire(); // A permit is acquired here
-            int newBalance = balance + amount;
+            int newBalance = balance + Amount;
 
             Thread.sleep(5);
 
