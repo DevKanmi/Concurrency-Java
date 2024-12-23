@@ -15,9 +15,9 @@ public class ExecutorDemo extends PrintLetters {
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
         //Pass tasks to executor as anonymous objects to '3' threads we created
-        executor.execute(new PrintLetters('a',100));
-        executor.execute(new PrintLetters('b', 50));
-        executor.execute(new PrintLetters('d', 80));
+        executor.execute(new PrintLetters('a',10));
+        executor.execute(new PrintLetters('b', 5));
+        executor.execute(new PrintLetters('d', 5));
 
         //In a case the executor was set to a fixedthreadpool of '1' and we created 3 tasks above
         //The tasks would be ran sequentially not concurrently due to only one thread been available

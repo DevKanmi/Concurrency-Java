@@ -59,6 +59,8 @@ public class BankingDemo {
 
         thread1.start();
         thread2.start();
+
+        
     }
 
 }

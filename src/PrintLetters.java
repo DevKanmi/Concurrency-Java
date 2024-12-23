@@ -19,6 +19,7 @@ public class PrintLetters implements Runnable{  //Instead of Implement Runnable,
 }
 
 
+
 ////Task Object Created here
 //PrintLetters task1 = new PrintLetters('r',40);
 //PrintLetters task2 = new PrintLetters('g',30);
@@ -26,7 +27,6 @@ public class PrintLetters implements Runnable{  //Instead of Implement Runnable,
 ////Thread that faciliates execution of a task
 //Thread thread1 = new Thread(task1);
 //Thread thread2 = new Thread(task2);
-//
 //        thread1.start();
 //        thread2.start();
 //    }
